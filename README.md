@@ -1,6 +1,6 @@
 # Trello JSON query app
 
-I wanted to get all of the names of cards in specific lists in my Trello board. So I exported the board as JSON (from the Trello UI), then wrote this utility that parses JSON to Lists and Cards. It outputs the Card names to the console from a specific List.
+I wanted to get all of the names of cards in specific lists in my Trello board. So I exported the board as JSON (from the Trello UI), then wrote this utility that parses JSON to Lists and Cards. It outputs the Card names to a CSV file from a specific List.
 
 This is v1. It's a simple starting point that solves a specific problem (show me card names for this list).
 
@@ -15,6 +15,4 @@ Todo
 Done
 
 Show cards for list (enter exact name): Todo
-Walk the dog
-Write some code
-Watch a movie
+Output query results to: C:\temp\trello-query-133284861454721501.csv
