@@ -64,10 +64,9 @@ while (true)
 
     if (listMapByName.TryGetValue(queryListName, out TrelloList trelloList))
     {
-        foreach(var card in trelloList.Cards)
-        {
-            Console.WriteLine(card.Name);
-        }
+        var fileName = $@"C:\temp\trello-query-{DateTime.Now.ToFileTime()}.csv";
+        File.WriteAllLines(fileName, trelloList.Cards.Select(c => c.Name));
+        Console.WriteLine($"Output query results to: {fileName}");
     }
     else
     {
